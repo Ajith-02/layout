@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3639;
+    color: white;
+}
+
+.nav{
+    overflow: hidden;
+    background-color: #3F4E4F;  
+}
+.nav a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.nav a:hover{
+    background-color: aliceblue;
+    color: #2C3639;
+}
+
+.content{
+    float: left;
+    width: 33%;
+    padding: 8px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+      .content{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .content{
+        width: 100%;
+    }
+}
